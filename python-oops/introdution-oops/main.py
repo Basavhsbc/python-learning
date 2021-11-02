@@ -11,6 +11,8 @@
 # To define your own data type, use class 
 # To define class in python
 class Employee:
+    def __init__(self):
+        print("I am created")
     def employe_package(self,x,y):
         return x*y
 
