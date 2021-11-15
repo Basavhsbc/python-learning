@@ -1,0 +1,6 @@
+import hashlib
+filename=input("Enter file name \n")
+with open(filename, "rb") as file:
+    bytes=file.read() # Read file as bytes
+    readable_hash=hashlib.md5(bytes).hexdigest()
+    print(readable_hash)
